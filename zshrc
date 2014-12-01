@@ -87,6 +87,9 @@ alias cd..='cd ..'
 alias py='python'
 alias open=xdg-open
 
+alias grep="/usr/bin/grep $GREP_OPTIONS"
+unset GREP_OPTIONS
+
 function lgrep(){
     ls -al | grep $1
 }
